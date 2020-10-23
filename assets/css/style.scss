@@ -7,6 +7,29 @@
     --secondary-text: #828282;
   }
   
+  html {
+    scroll-behavior: smooth;
+  }
+  html::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+html::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+html::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: var(--charcoal);
+}
+  
   body {
     margin: 0;
     font-family: "Poppins", sans-serif;
@@ -70,18 +93,15 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   
   .display-4 {
+    font-size:calc(2rem + 1vw);
     color: var(--charcoal);
   }
-  
-  @media (max-width: 576px) {
-    .display-4 {
-      font-size: 2rem;
-    }
-    .lead {
-      font-size: 1rem;
-    }
+
+  .lead{
+    font-size:calc(.7rem + 1vw) ;
   }
   
   .jumbotron span.typed-text {
@@ -297,28 +317,17 @@
 
 //Testimonials
 .testimonial-quote {
-    font-size: 16px;
+    font-size: calc(.5rem + 1vw);
 }
 
 .testimonial-quote blockquote {
-    border: 0;
-    margin: 0;
-    padding: 0;
-
-    background: none;
     color: gray;
     font-family: Georgia, serif;
-    font-size: 1.5em;
+    font-size: calc(.7rem + 1vw);
     font-style: italic;
     line-height: 1.4 !important;
-    margin: 0;
-    position: relative;
     text-shadow: 0 1px white;
     z-index: 600;
-}
-
-.testimonial-quote blockquote * {
-    box-sizing: border-box; 
 }
 
 .testimonial-quote blockquote p {
@@ -329,10 +338,9 @@
 .testimonial-quote blockquote p:first-child:before {
     content: '\201C';
     color: var(--persian-green);
-    font-size: 7.5em;
+    font-size: calc(4rem + 1vw);
     font-weight: 700;
     opacity: .3;
-    position: absolute;
     top: -.4em;
     left: -.2em;    
     text-shadow: none;
@@ -345,7 +353,6 @@
     display: block;
     width: 120px;
     height: 120px;
-    position: absolute;
     top: -.2em; 
     left: 0;    
 }
@@ -353,7 +360,7 @@
 .testimonial-quote cite {
     color: gray;
     display: block;
-    font-size: .8em; 
+    font-size: .8rem; 
 }
   
 .testimonial-quote cite span {
@@ -365,24 +372,8 @@
     text-transform: uppercase;
     text-shadow: 0 1px white; 
 }
+ 
 
-.testimonial-quote {
-    position: relative; 
-}
-
-.testimonial-quote .quote-container {
-    padding-left: 160px; 
-}
-  
-.testimonial-quote.right .quote-container {
-    padding-left: 0;
-    padding-right: 160px; 
-}
-
-.testimonial-quote.right img {
-    left: auto;
-    right: 0;
-}
 
 .testimonial-quote.right cite {
     text-align: right; 
@@ -417,14 +408,14 @@
 
 .at-user__name {
   color: var(--charcoal);
-  font-size: 1rem;
+  font-size: calc(1rem+1vw);
   font-weight: 500;
   line-height: 2.625rem;
 }
 
 .at-user__title {
   color: var(--secondary-text);
-  font-size: 0.875rem;
+  font-size: calc(.4rem + 1vw);
 }
 
 .about-card {
@@ -503,6 +494,10 @@
   background-position: fixed;
 }
 
+.contact-content h2{
+  font-size: calc(1rem + 1vw);
+}
+
 @media (max-width:768px){
   .contact-svg{
     display: none;
@@ -554,3 +549,13 @@ footer{
   background: var(--secondary-text);
 }
 
+
+@media only screen and (orientation: landscape) and (max-width:961px){
+  .jumbotron,
+  .contact-content,
+  .about-card{
+    height: 100%;
+  }
+
+  
+}
