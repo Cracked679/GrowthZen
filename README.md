@@ -1,6 +1,6 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-<h1 align="center">FoodScape</h1>
+<h1 align="center">GrowthZen</h1>
 
 ## Description
 Fully responsive digital agency website designed and hand-coded by me.
