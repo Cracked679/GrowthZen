@@ -9,7 +9,7 @@ Fully responsive digital agency website designed and hand-coded by me.
 - Topics
   - html5, js, css3, freecodecamp, self-learning, responsive-web-design
 
-### ScreenShots
+### Preview
 ![alt text](assets/img/rec-min.gif "GIF Image")
 
 <!-- MARKDOWN LINKS & IMAGES -->
