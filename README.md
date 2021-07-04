@@ -5,9 +5,9 @@
 ## Description
 Fully responsive digital agency website designed and hand-coded by me.
 
-foodscape.netlify.app/
+growthzen.netlify.app
 Topics
-netlify responsive-design html-css-javascript
+html5 js css3 freecodecamp self-learning responsive-web-design
 
 ### ScreenShots
 ![alt text](assets/img/rec-min.gif "GIF Image")
