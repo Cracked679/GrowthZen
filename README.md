@@ -5,9 +5,9 @@
 ## Description
 Fully responsive digital agency website designed and hand-coded by me.
 
-growthzen.netlify.app
-Topics
-html5 js css3 freecodecamp self-learning responsive-web-design
+-Please Do Visit : https://growthzen.netlify.app
+-Topics
+  <tag>html5</tag> js css3 freecodecamp self-learning responsive-web-design
 
 ### ScreenShots
 ![alt text](assets/img/rec-min.gif "GIF Image")
